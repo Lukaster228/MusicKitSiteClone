@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Prompt", sans-serif;
+}
+
+.header-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0 15px;
+    z-index: 100;
+    flex-wrap: wrap;
+}
+
+.monogram-icon-img {
+    width: 50px;
+    height: 40px;
+}
+
+.sopping-bag-img {
+    width: 25px;
+}
+
+.header-left-side-div, .header-right-side-div {
+    display: flex;
+    color: rgb(239, 194, 179);
+    align-items: center;
+    padding-left: 10px;
+}
+
+.header-content-div {
+    display: flex;
+    background-color: #1a2456;
+    width: 100%;
+    justify-content: space-between;
+    min-height: 50px;
+    position: relative;
+}
+
+.monogram-title-txt {
+    padding-left: 10px;
+    font-weight: 500;
+}
+
+.header-right-side-div {
+    width: 50%;
+    justify-content: end;
+}
+
+.header-right-side-txt-div {
+    display: flex;
+    min-width: 670px;
+    justify-content: space-between;
+    padding-right: 25px;
+}
+
+.header-right-side-txt:hover {
+    cursor: pointer;
+    color: rgb(238, 146, 115);
+}
+
+.header-right-side-txt, .header-shop-and-usd-div {
+    font-size: 12px;
+}
+
+.header-shop-and-usd-div {
+    display: flex;
+    width: 80px;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.shop-txt {
+    font-weight: 600;
+}
+
+.main-div {
+    height: 675px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://monogramcc.com/static/9a0b554db1990565457610c5f83b3ad7/91943/shop_cta_xl_896f6b8270.webp");
+    background-size: cover;
+    background-position: 50%;
+}
+
+.h1-txt-div {
+    max-width: 370px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.h1-txt {
+    line-height: 45px;
+    font-size: 37.5px;
+}
+
+.h1-txt, .discover-txt{
+    color: rgb(239, 194, 179);
+}
+
+.discover-txt-div {
+    max-width: 350px;
+    text-align: center;
+}
+
+.main-content-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.6);
+}
+
+.top-product-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    min-width: 1160px;
+    max-width: 1160px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.top-product-content-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 1160px;
+    max-width: 1160px;
+    padding: 40px 0; 
+}
+
+.block {
+    display: block;
+    width: 572.5px;
+    max-width: 50%;
+    position: relative;
+}
+
+.block-imgs-div {
+    position: relative;
+}
+
+.block-imgs-div:hover .small-blocks-img{
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.block:hover .shop-now-btn{
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.block:hover .price-txt{
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.small-blocks-img, .small-blocks-under-img {
+    width: 572.5px;
+}
+
+.small-blocks-img {
+    position: absolute;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.pre-order-txt {
+    position: absolute;
+    top: 15px;
+    left: 481px;
+    z-index: 10;
+    background-color: #ff8b68;
+    font-size: 12.375px;
+    padding: 5px 11px;
+    font-weight: 600;
+}
+
+.pre-order-txt:hover {
+    cursor: pointer;
+}
+
+.product-description-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-name-txt {
+    font-weight: 600;
+    color: #1a2456;
+}
+
+.product-descr-txt {
+    font-weight: 200;
+}
+
+.shop-now-btn {
+    position: absolute;
+    right: 0;
+    border: none;
+    background-color: #1a2456;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.price-txt {
+    opacity: 1;
+    transition: 0.2s ease-in-out;
+}
+
+.footer-div {
+    display: flex;
+    justify-content: center;
+    background-color: #1a2456;
+    height: 325px;
+    padding-top: 40px;
+    width: 100%;
+}
+
+.footer-content-div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 350px;
+}
+
+.column-header {
+    color: #efc2b3;
+    font-size: .9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.address:hover {
+    cursor: auto;
+}
+
+.under-txt {
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: .9rem;
+    color: #efc2b3;
+}
+
+.under-txt {
+    cursor: pointer;
+}
+
+.column-header {
+    margin-bottom: 15px;
+}
+
+.more-discrp-div {
+    width: 380px;
+}
+
+.under-txt-bottom {
+    margin-top: 10px;
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: .9rem;
+    color: #efc2b3;
+}
+
+.input-field {
+    margin-top: 10px;
+    border: 1px solid #efc2b3;
+    background-color: transparent;
+    color: white;
+}
+
+.submit-btn {
+    padding: 5px 20px;
+    border-radius: 20px;
+    border-style: none;
+    background-color: #efc2b3;
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+}
+
+@media(max-width: 1200px) {
+    
+    .header-div {
+        max-width: 1200px;
+    }
+    
+    .block {
+        width: 400px;
+    }
+
+    .row {
+        min-width: 815px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .small-blocks-img, .small-blocks-under-img {
+        width: 400px;
+    }
+
+    .product-descr-txt {
+        width: 300px;
+    }
+    
+    .pre-order-txt {
+        top: 15px;
+        left: 308px;
+    }
+
+    .footer-content-div {
+        margin: 0 ;
+    }
+}
+
+@media(max-width: 1000px) {
+    .header-right-side-txt {
+        visibility: hidden;
+    }
+}
+
+@media(max-width: 1600px) {
+    .footer-content-div {
+        margin: 0 200px;
+    }
+}
+
+@media(max-width: 860px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .first-block-element-div {
+        margin-bottom: 20px;
+    }
+}
